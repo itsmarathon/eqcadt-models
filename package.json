@@ -1,0 +1,45 @@
+{
+  "name": "@itsmarathon/eqcadt-models",
+  "version": "1.0.0",
+  "description": "Open source ONNX models for conversational AI - optimized from facebook/bart-large-mnli",
+  "author": "EQCADT Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/itsmarathon/eqcadt-models.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/",
+    "access": "public"
+  },
+  "files": [
+    "models/*.part*",
+    "models/metadata.json", 
+    "models/chunk-checksums.sha256",
+    "scripts/model-assembler.js",
+    "scripts/verify-integrity.js",
+    "docs/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "onnx",
+    "bart",
+    "nli",
+    "natural-language-inference",
+    "intent-detection",
+    "conversational-ai",
+    "machine-learning",
+    "web-ml"
+  ],
+  "scripts": {
+    "verify": "node scripts/verify-integrity.js",
+    "assemble": "node scripts/model-assembler.js",
+    "prepublishOnly": "npm run verify",
+    "size": "du -sh models/*",
+    "clean": "rm -f models/bart-nli-web.onnx"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
