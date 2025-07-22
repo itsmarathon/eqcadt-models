@@ -13,9 +13,8 @@
     "access": "public"
   },
   "files": [
-    "models/*.part*",
-    "models/metadata.json", 
-    "models/chunk-checksums.sha256",
+    "models/chunks/",
+    "models/model-manifest.json",
     "scripts/model-assembler.js",
     "scripts/verify-integrity.js",
     "docs/",
