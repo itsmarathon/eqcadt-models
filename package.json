@@ -1,6 +1,6 @@
 {
   "name": "@itsmarathon/eqcadt-models",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Open source ONNX models for conversational AI - optimized from facebook/bart-large-mnli",
   "keywords": [
     "onnx",
@@ -24,11 +24,13 @@
   "author": "EQCADT Team",
   "type": "commonjs",
   "main": "index.js",
+  "types": "index.d.ts",
   "directories": {
     "doc": "docs"
   },
   "files": [
     "index.js",
+    "index.d.ts",
     "models/chunks/",
     "models/model-manifest.json",
     "scripts/model-assembler.js",
