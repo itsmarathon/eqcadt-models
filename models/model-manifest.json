@@ -13,8 +13,8 @@
       "files": {
         "assembled": {
           "filename": "bart-nli-web.onnx",
-          "size_bytes": 153092224,
-          "size_human": "146.0MB",
+          "size_bytes": 153610302,
+          "size_human": "146.5MB",
           "sha256": "f1ec688d92e9c3db0058b45b711a8afbf23b8505a62a62a91ad8e44c6874bf1a"
         },
         "chunks": {
